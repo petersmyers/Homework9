@@ -4,8 +4,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Weather or Not</title>
-  <!-- Talking with Bootstrap -->
+  <title>Warmer Near the Equator</title>
+  <!-- Talking with Bootstrap  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- link to making things pretty -->
   <link rel="stylesheet" href="HW9_LandingStyle.css">
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="col-lg-1">
-                <div class="hover navbox">
+                <div class="navbox">
                     <a href="file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Landing.html">Home</a>
                 </div>
             </div>
@@ -49,14 +49,37 @@
             </div>
         </div>
     </div> 
-    <div class = "summary">
-        <h1>
-            The Project
-        </h1>
-        <p>It's <a target = "_blank" href = "https://www.youtube.com/watch?v=rQWZK5U233s">Never Enough!</a> <br>
-        Whether or not you finish your API homework, it comes back to haunt you in other homeworks. How. Rude. <br>
-        Sigh, so this project's goal was to look at whether weather is actually nicer near the Equator. One can assume it gets hotter, right? Isn't that what we learned in elementary school or something? But I was taught a lot of things in elementary school (or really, all levels of school) that were... questionable (can we say "institutionalize racism?"). So why not test this idea of better weather at the Equator?<br>
-        This project sourced data from <a target = "_blank" href= "https://openweathermap.org/api">OpenWEatherMap API</a> in conjunction with <a target = "_blank" href = "https://pypi.org/project/citipy/">CityPy</a> to investigate the weather at different latitudes around the world. We pulled data on city latitude and looked at the Temperature, humidity, cloudiness, and wind speed associated with each city. Our sample was around 500 cities, each with different latitudes and different weather. Come, let's take a look at the oh-so-exciting results!</p>
+<!-- Showing the graph that the user picked          -->
+    <div class = "row">
+        <div class = "col-lg-12">
+            <div class = "visuals">
+                Visualizations: Latitude VS Temperature
+            </div>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-sm-3"> </div>
+        <div class = "col-sm-6">
+            <a target = "_blank" href = "Resources/assets/images/Fig1.png">
+            <img src="Resources/assets/images/Fig1.png" alt="LatitudeVSTemperature">
+            </a>
+        </div>
+        <div class = "col-sm-3"> </div>
+    </div>
+    <!-- I like some space, so let's add blank box -->
+    <div class = "row">
+        <div class = "col-lg-12 bot_space">Is this creepy??</div>
+    </div>
+    <!-- Adding some information about the plot for the user or something -->
+    <h2>Let's talk about it</h2>
+    <div class = "row">    
+        <div class = "col-md-2"></div>
+        <div class = "col-md-8 words">
+            <p>This beautiful scatter plot shows depicts the increase in temperature as one moves closer to the Equator. On the x-axis, we have the latitude of cities around the world. As we go North of the Equator, the latitudes are positive. As we go south of the Equator, the latitudes are negative. On the y-axis, we have the maximum temperature of the city throughout the year. <br/>
+            This chart clearly shows a trend in increased temperatures as one moves closer to the Equator. Interestingly, there are a few cities SOUTH of the Equator that had higher temperatures than at the Equator itself. If this data scientist had to guess, that's probably because the Earth is not only round (If you're a flat-earther, you can just close your browser now), but it is also tilted slightly. Just ever. So. Slightly. such that the cities JUST South of the Equator may get a bit more <a target = "_blank" href = "https://www.youtube.com/watch?v=RlzCZCZnnpM">heat</a> during parts of the year.   
+            </p>
+        </div>
+        <div class = "col-md-2"></div>
     </div>
     <br>
     <br>
@@ -91,11 +114,8 @@
             </div>
         </div>
     <div class = "row">
-        <div class = "col-lg-12 bot_space">
-            <a class = "bot_space" target = "_blank" href = "Images/howrude.gif">Is anyone out there?</a>  
-        </div>
-
-    </div>         
+        <div class = "col-lg-12 bot_space">Won't you let me in?</div>
+    </div> 
 
 </body>
 </html>

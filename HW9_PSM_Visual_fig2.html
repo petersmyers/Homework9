@@ -4,8 +4,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Weather or Not</title>
-  <!-- Talking with Bootstrap -->
+  <title>It's Humid Everywhere</title>
+  <!-- Talking with Bootstrap  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- link to making things pretty -->
   <link rel="stylesheet" href="HW9_LandingStyle.css">
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="col-lg-1">
-                <div class="hover navbox">
+                <div class="navbox">
                     <a href="file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Landing.html">Home</a>
                 </div>
             </div>
@@ -49,14 +49,37 @@
             </div>
         </div>
     </div> 
-    <div class = "summary">
-        <h1>
-            The Project
-        </h1>
-        <p>It's <a target = "_blank" href = "https://www.youtube.com/watch?v=rQWZK5U233s">Never Enough!</a> <br>
-        Whether or not you finish your API homework, it comes back to haunt you in other homeworks. How. Rude. <br>
-        Sigh, so this project's goal was to look at whether weather is actually nicer near the Equator. One can assume it gets hotter, right? Isn't that what we learned in elementary school or something? But I was taught a lot of things in elementary school (or really, all levels of school) that were... questionable (can we say "institutionalize racism?"). So why not test this idea of better weather at the Equator?<br>
-        This project sourced data from <a target = "_blank" href= "https://openweathermap.org/api">OpenWEatherMap API</a> in conjunction with <a target = "_blank" href = "https://pypi.org/project/citipy/">CityPy</a> to investigate the weather at different latitudes around the world. We pulled data on city latitude and looked at the Temperature, humidity, cloudiness, and wind speed associated with each city. Our sample was around 500 cities, each with different latitudes and different weather. Come, let's take a look at the oh-so-exciting results!</p>
+<!-- Showing the graph that the user picked          -->
+    <div class = "row">
+        <div class = "col-lg-12">
+            <div class = "visuals">
+                Visualizations: Latitude VS Humidity
+            </div>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-sm-3"> </div>
+        <div class = "col-sm-6">
+            <a target = "_blank" href = "Resources/assets/images/Fig2.png">
+            <img src="Resources/assets/images/Fig2.png" alt="LatitudeVSHumidity">
+            </a>
+        </div>
+        <div class = "col-sm-3"> </div>
+    </div>
+    <!-- I like some space, so let's add blank box -->
+    <div class = "row">
+        <div class = "col-lg-12 bot_space">HELLOOOO!!!!</div>
+    </div>
+    <!-- Adding some information about the plot for the user or something -->
+    <h2>Let's talk about it</h2>
+    <div class = "row">    
+        <div class = "col-md-2"></div>
+        <div class = "col-md-8 words">
+            <p>We often associate heat with humidity. As this data scientist lives in St Louis, the summers are terrible, not because of the heat, but because of the humidity. Swimming through a swamp of heavy air is unpleasant at best and not something that draw tourists to <a target = "_blank" href = "https://www.youtube.com/watch?v=u8rT6ij0PSo">come along</a> down to the banks of the Mississippi. Interestingly, this graph tells us that you have a relatively even probability of suffering from humidity no matter how close you are to the Equator.<br/>
+            This scatter plot has latitude on the x-axis, denoting how close a given city may be to the Equator. On the y-axis, we have the % humidity on average for said city. We can see that no clear trend exists in this data that would suggest that closer to the Equator means higher humidity. If such a trend existed, then we would expect to see something akin to higher humidity in the middle of the graph, centered around the Equator, and lower humidity on either side.<br>  
+            </p>
+        </div>
+        <div class = "col-md-2"></div>
     </div>
     <br>
     <br>
@@ -91,11 +114,8 @@
             </div>
         </div>
     <div class = "row">
-        <div class = "col-lg-12 bot_space">
-            <a class = "bot_space" target = "_blank" href = "Images/howrude.gif">Is anyone out there?</a>  
-        </div>
-
-    </div>         
+        <div class = "col-lg-12 bot_space">Let's play a little game.</div>
+    </div> 
 
 </body>
 </html>
