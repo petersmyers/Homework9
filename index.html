@@ -1,0 +1,101 @@
+<!-- I hope this is the landing page page-->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather or Not</title>
+  <!-- Talking with Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- link to making things pretty -->
+  <link rel="stylesheet" href="HW9_LandingStyle.css">
+</head>
+
+<body>
+    <div>
+        <div class = "row">
+            <div class="col-lg-8">
+                <div class="headbox">
+                    <a href = "file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Landing.html">Weather or Not</a>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="hover navbox">
+                    <a href="file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Landing.html">Home</a>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class = "hover">
+                    <div class="dropdown">
+                        <button class="dropbtn">Plots</button>
+                        <div class="dropdown-content">
+                            <a href="file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Visual_fig1.html"> Temperature </a>
+                            <a href="file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Visual_fig2.html">Humidity</a>
+                            <a href="file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Visual_fig3.html">Cloudiness</a>
+                            <a href="file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Visual_fig4.html">Wind Speed</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class = "navbox">
+                    <a href="file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Comparison.html">Compare</a>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class = "navbox">
+                    <a href="file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_TheData.html">Data</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class = "summary">
+        <h1>
+            The Project
+        </h1>
+        <p>It's <a target = "_blank" href = "https://www.youtube.com/watch?v=rQWZK5U233s">Never Enough!</a> <br>
+        Whether or not you finish your API homework, it comes back to haunt you in other homeworks. How. Rude. <br>
+        Sigh, so this project's goal was to look at whether weather is actually nicer near the Equator. One can assume it gets hotter, right? Isn't that what we learned in elementary school or something? But I was taught a lot of things in elementary school (or really, all levels of school) that were... questionable (can we say "institutionalize racism?"). So why not test this idea of better weather at the Equator?<br>
+        This project sourced data from <a target = "_blank" href= "https://openweathermap.org/api">OpenWEatherMap API</a> in conjunction with <a target = "_blank" href = "https://pypi.org/project/citipy/">CityPy</a> to investigate the weather at different latitudes around the world. We pulled data on city latitude and looked at the Temperature, humidity, cloudiness, and wind speed associated with each city. Our sample was around 500 cities, each with different latitudes and different weather. Come, let's take a look at the oh-so-exciting results!</p>
+    </div>
+    <br>
+    <br>
+    <div class = "row">
+            <div class = "col-lg-12">
+                <div class = "landing">
+                    Visualizations<br>
+                    <h4>Click a graph to learn more</h4>
+                </div>
+            </div>
+        </div>
+    <div class = "row">
+            <div class = "col-sm-12 col-lg-3">
+                <a href = "file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Visual_fig1.html">
+                <img src="Resources/assets/images/Fig1.png" class="d-block w-100" alt="...">
+                </a>
+            </div>
+            <div class = "col-sm-12 col-lg-3">
+                <a href = "file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Visual_fig2.html">
+                <img src="Resources/assets/images/Fig2.png" class="d-block w-100" alt="...">
+                </a>
+            </div>
+            <div class = "col-sm-12 col-lg-3">
+                <a href = "file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Visual_fig3.html">
+                <img src="Resources/assets/images/Fig3.png" class="d-block w-100" alt="...">
+                </a>
+            </div>
+            <div class = "col-sm-12 col-lg-3">
+                <a href = "file:///Users/P_zizzle/Desktop/Homework9/HW9_PSM_Visual_fig4.html">
+                <img src="Resources/assets/images/Fig4.png" class="d-block w-100" alt="...">
+                </a>
+            </div>
+        </div>
+    <div class = "row">
+        <div class = "col-lg-12 bot_space">
+            <a class = "bot_space" target = "_blank" href = "Images/howrude.gif">Is anyone out there?</a>  
+        </div>
+
+    </div>         
+
+</body>
+</html>
